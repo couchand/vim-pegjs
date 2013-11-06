@@ -7,7 +7,7 @@ if exists("b:current_syntax")
     finish
 endif
 
-syn match   pegOperator "[=/]"
+syn match   pegOperator "[=/?+()]"
 syn region  pegString   start=+"+ end=+"+ skip=+\\"+
 syn region  pegHandler  start=+{+ end=+}+ skip=#{[^}]+}#
 
